@@ -1,0 +1,176 @@
+
+.nav{
+    overflow: hidden;
+    background-image: linear-gradient(90deg,rgba(255, 0, 0, 0.534),rgba(19, 19, 160, 0.35));
+}
+.nav a {
+    display: block;
+    float:left;
+    color:black;
+    text-align: center;
+    padding: 1.125rem 1rem;
+    text-decoration: none;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+}
+.nav a:hover{
+    background-color: rgba(236, 51, 51, 0.863);
+}
+.nav a.active{
+    background-color: rgba(236, 51, 51, 0.863);
+    
+}
+
+body{
+    text-align: center;
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    
+  
+}
+
+.zapati{
+    color:white;
+    padding: 2rem;
+}    
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-size:100%;
+    scroll-behavior: smooth;
+}
+h1{
+    color:white;
+}
+
+.zapati{
+    margin-top: 5%;
+}
+.logo{
+    border-radius: 50%;
+}
+.col_5{
+    text-align: left;
+    width: 20%;
+    float: left;
+    padding: 3rem;
+    font-size: 1.2em;
+    background-color: rgba(0,0,0,0.6);
+   
+   
+
+}
+h3{
+
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+   
+}
+h1,h3{
+    font-family: 'Libre Baskerville', serif;
+    color:white;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.obsah{
+    text-align: center;
+}
+.obsah h1{
+    font-size: 95px;
+    margin-bottom: 50px;
+}
+.video-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+}
+@media screen and (max-width:960px){
+ 
+    .video,.video-bg{
+       visibility: hidden;
+      }
+      body{
+        background: url(../img/pozadi4.PNG) ;
+       
+      }
+}
+@media screen and (max-width:600px){
+     .nav,.nav a{
+        width:100%;
+        float:none;
+     }
+
+
+    address,.zapati{
+        text-align: center;
+    }
+   
+
+
+}
+@media screen and (max-width:800px){
+ 
+    .inner-image img{
+        width:250px;
+        height:200px;
+        text-align: center;
+    }
+    .image-thumbnail img
+    {
+        width:282px;
+        height:160px;
+        text-align: center;
+    }
+    .gallery{
+        margin: 0;
+    }
+    .obsah2{
+        text-align: left;
+    }
+ 
+    
+    
+}
+*{padding:0;margin:0;text-decoration:none;list-style-type:none;font-family:'roboto', sans-serif;}
+::selection{color:#fff;background-color:#ff6666;}
+
+
+.wrap-box{width:100%;height:auto;}
+.gallery{display:inline-block;width:auto;height:auto;margin:70px 100px;}
+.image-thumbnail{display:inline-block;width:auto;height:auto;    background-image: linear-gradient(90deg,rgba(255, 0, 0, 0.534),rgba(19, 19, 160, 0.35));;margin:5px 4px;padding:5px;cursor:pointer;box-shadow:3px 2px 5px rgb(122, 7, 7);transition:300ms ease;}
+.image-thumbnail img{display:block;width:360px;height:200px;}
+.gallery:hover .image-thumbnail:not(:hover){filter:blur(2px) grayscale(1);opacity:0.7;transform:scale(0.9);}
+/*        Light Box Styling             */
+.light-box{position:fixed;top:2%;left:0;visibility:hidden;opacity:0;width:100%;height:100%;background-color:rgba(72,73,74,0.7);transition:500ms ease;}
+.light-box:target{visibility:visible;opacity:1;}
+.edges{width:min-content;height:auto;background-image: linear-gradient(90deg,rgba(255, 0, 0, 0.534),rgba(19, 19, 160, 0.35));padding:20px;margin:30px auto;box-shadow:0 0 30px #333;}
+.title{color:#222;font-size:20px;text-align:center;}
+.inner-image{position:relative;width:100%;height:100%;}
+.inner-image img{max-width:700px;max-height:450px;}
+.close-btn, .next-btn{float:left;}
+.close-btn{padding:5px 0;}
+.close-btn, .next-btn, .previous-btn{font-size:16px;}
+span a{color:#444;}
+.image-title{position:absolute;bottom:10px;font-size:16px;color:#222;background-color:transparent;border-bottom:5px solid #eee;padding:10px;cursor:pointer;opacity:0;transition:300ms ease;}
+inner-image:hover .image-title{opacity:0.8;}
+.obsah2{
+    color:white;
+    text-align: left;
+}
+.title{
+    color:white;
+}
